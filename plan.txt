@@ -1,0 +1,31 @@
+Step 1: create function computerPlay() which will return a randomly selected move.
+
+Pseudocode:
+1. Call function from the main script -> More on that later.
+2. Inside the function, a constant array will contain the 3 possilbe outcomes: "Rock", "Paper" and "Scissors"
+3. Using Math.Random() generate a random number between 0 and 2 and store to a variable.
+4. Return the indexed array element at the location of the randomly generated number.
+5. Save the returned string to variable computerMove.
+
+
+Step 2: create function playRound(playerMove, computerMove) that determines the winner for a single round.
+
+Pseudocode:
+1. Call the function from the main script, the computerMove argument will be a call to the computerPlay function.
+2. Check the two arguments for winning conditions.
+3. If player wins, print out message and return "player" string to main script.
+4. If computer wins, print out message and return "computer" string to main script.
+5. If it is a tie, print out message and return nothing to main script.
+
+
+Step 3: create a function game() that plays thru 5 rounds of R-P-S and keeps track of score and reports winner / loser at the end.
+
+Pseudocode:
+1. Initialize player_wins and computer_wins variables to track the total scores.
+2. Commence a for-loop to execute 5 times.
+3. Prompt the user for their move. Assign input to playerMove variable and convert to all lowercase.
+4. Call the playRound function, passing in playerMove and a call to computerPlay() function as arguments. Assign the return value of playRound to outcome variable.
+5. Examine outcome variable. true indicates player victory, false indicates computer victory, null value indicates tie.
+6. Modify player_wins or computer_wins as per the value of outcome variable.
+7. Re execute steps 3-6 until the conditions to break the for loop are met.
+8. Once the for-loop is terminated, compare the player_wins and computer_wins variables to see who won the game. Print the outcome.
