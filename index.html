@@ -3,22 +3,45 @@
     <head>
         <meta charset="utf-8">
         <title> Rock Paper Scissors! </title>
+        <link rel="stylesheet" href="styles.css">
     </head>
+    
     <body>
-        <button id=0> Rock </button>
-        <button id=1> Paper </button>
-        <button id=2> Scissors </button>
-        <div id="score">
-            <p id="player"> Player Score: 0 </p>
-            <p id="computer"> Computer Score: 0 </p>
-        </div>
+        <div class="container">
+            <div class="buttons">
+                <button id=0><img src="images/rock.png"> Rock </button>
+                <button id=1><img src="images/paper.png">  Paper </button>
+                <button id=2><img src="images/scissors.png">  Scissors </button>
+            </div>
 
-        <!-- div to display game_over script. -->
-        <div id="game_over">
-            <p id="winner"> Who will win? </p>
-        </div>
+            <!-- div that shows the arena -->
+            <div class="arena">
+                <div class="arena_player"> 
+                    <p id="player_text"> </p> 
+                    <img id="player_img" src="">
+                </div>
 
-        <script src="script.js">
-        </script>
+                <div class="arena_mid">
+                    <p> V.S </p>
+                </div>
+
+                <div class="arena_computer"> 
+                    <p id="computer_text"> </p>
+                    <img id="computer_img" src=""> 
+                </div>
+            </div>
+
+            <div id="score">
+                <p id="player"> Player Score: 0 </p>
+                <p id="computer"> Computer Score: 0 </p>
+            </div>
+
+            <!-- div to display game_over script. -->
+            <div id="game_over">
+                <p id="winner"> Who will win? </p>
+            </div>
+
+            <script src="script.js"></script>
+        </div>
     </body>
 </html>

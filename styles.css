@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* "Arena" image, animation and text styling */
+.arena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/arena.jpg");
+    width: 800px;
+    height: 450px;
+    border-radius: 25px;
+    margin: 25px;
+    gap: 25px;
+}
+
+.arena_player {
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+.arena_computer {
+    margin-left: auto;
+    margin-left: 25px;
+}
+
+
+.arena_mid {
+    position: fixed;
+    font-size: 45px;
+}
+
+
+#player_img, #computer_img {
+    mix-blend-mode: multiply;
+}
+
+
+#player_text, #computer_text {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: large;
+}
+
+#score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: x-large;
+    gap: 50px;
+}
+
+.again_button {
+    
+}
