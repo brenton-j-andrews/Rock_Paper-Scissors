@@ -1,5 +1,9 @@
 # Rock_Paper-Scissors
-A rock, paper, scissors web game in javascript done for The Odin Project. I was going to add some animations but then I lost motivation. One problem to fix in the future is the alignment of the "play again" button that appears after each game, it is currently skewed to the left. 
+A simple and unpolished rock, paper, scissors game completed for [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors). 
+
+[Click here](https://brenton-j-andrews.github.io/Rock_Paper-Scissors/) for a live demo.
+
+Created with vanilla Javascript, HTML and CSS.
 
 Image credits:
 Icons sourced from www.icons8.com, 
